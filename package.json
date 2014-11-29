@@ -1,0 +1,25 @@
+{
+  "name": "backbone-view-switcher",
+  "version": "0.0.3",
+  "description": "A Backbone View Switcher",
+  "main": "index.js",
+  "scripts": {
+    "bfy": "browserify app.js -o bundle.js",
+    "test": "browserify tests/*.js | testling"
+  },
+  "keywords": [
+    "Backbone",
+    "View",
+    "Switcher",
+    "put",
+    "into"
+  ],
+  "author": "Benjamin P. Verble",
+  "license": "MIT",
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "jquery": "^2.1.1",
+    "lodash": "^2.4.1",
+    "tape": "^3.0.3"
+  }
+}
