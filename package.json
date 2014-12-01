@@ -1,6 +1,6 @@
 {
   "name": "backbone-view-switcher",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A Backbone View Switcher",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,10 @@
     "put",
     "into"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BenjaminVerble/backbone-view-switcher"
+  },
   "author": "Benjamin P. Verble <bvrider@gmail.com> (https://github.com/BenjaminVerble)",
   "license": "MIT",
   "devDependencies": {

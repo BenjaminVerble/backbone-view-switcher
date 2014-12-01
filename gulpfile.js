@@ -29,7 +29,9 @@ function compileAllScripts (dir) {
   fs.readdir(dir, function (err, files) { 
     if (err) console.error(err);
     files.forEach(function(item){
-      compileScripts(dir + '/' + item + '/app.js');
+      if (item !== 'shared') {
+        compileScripts(dir + '/' + item + '/app.js');
+      }
     });
   });
 }
@@ -38,9 +40,11 @@ function removeBundles (dir) {
   fs.readdir(dir, function (err, files) { 
     if (err) console.error(err);
     files.forEach(function(item){
-      fs.unlink(dir + '/' + item + '/bundle.js', function (err){
-        if (err) console.error(err);
-      });
+      if (item !== 'shared') {
+        fs.unlink(dir + '/' + item + '/bundle.js', function (err){
+          if (err) console.error(err);
+        });
+      }
     });
   });
 }

@@ -1,39 +1,33 @@
 var Backbone = require('backbone');
 var $ = require('jquery');
 Backbone.$ = $;
-
 var putInto = require('../../index');
+var putIntoMain = putInto('#main');
 
-var Pie = Backbone.Model.extend({
-  defaults: {
-    kind: 'pecan'
-  }
-});
+var PieView = require('../shared/views/pie');
+var PieCollection = require('../shared/collections/pie');
 
-var Collection = Backbone.Collection.extend({
-  model: Pie
-});
+var IceCreamView = require('../shared/views/ice-cream');
+var IceCreamCollection = require('../shared/collections/ice-cream');
 
-var PieView = Backbone.View.extend({
-  initialize: function () {
-    this.collection.add({kind: 'honey', id: 1});
+var Router = Backbone.Router.extend({
+
+  routes: {
+    "": "pie",
+    "ice-cream": "iceCream"
   },
-  render: function () {
-    var model = this.collection.get(1)
-    this.$el.html('we like ' + model.get('kind') + ' pie!');
+
+  pie: function () {
+    putIntoMain(PieView, PieCollection);
+  },
+
+  iceCream: function () {
+    putIntoMain(IceCreamView, IceCreamCollection);
   }
+
 });
-
-var SimpleView = Backbone.View.extend({
-  render: function () {
-    this.$el.html('here is a view without a collection!!!');
-  }
-})
-
 
 $(function () {
-
-  var putIntoMain = putInto('#main');
-  putIntoMain(PieView, Collection);
-
+  var router = new Router();
+  Backbone.history.start();
 });
