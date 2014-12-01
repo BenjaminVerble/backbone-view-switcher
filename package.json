@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "bfy": "browserify app.js -o bundle.js",
-    "test": "zuul -- tests/index.js"
+    "test": "zuul -- test/index.js"
   },
   "keywords": [
     "Backbone",
