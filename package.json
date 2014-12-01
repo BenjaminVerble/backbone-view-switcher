@@ -14,11 +14,11 @@
     "put",
     "into"
   ],
-  "author": "Benjamin P. Verble",
+  "author": "Benjamin P. Verble <bvrider@gmail.com> (https://github.com/BenjaminVerble)",
   "license": "MIT",
   "devDependencies": {
     "backbone": "^1.1.2",
     "jquery": "^2.1.1",
-    "zuul": "1.0.1"
+    "zuul": "1.13.1"
   }
 }
