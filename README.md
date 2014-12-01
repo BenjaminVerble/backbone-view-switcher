@@ -10,7 +10,9 @@ places Backbone.js views into a container with an #id. can also attach a collect
 ## Installation
 
 - no need to do anything to use the module
-- for tests: `npm install`
+- for tests (against browsers):
+    + `npm install`
+    + `npm test`
 - for examples: `gulp`
 - to remove bundle files created by browserify: `gulp clean`
 
