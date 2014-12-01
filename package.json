@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "bfy": "browserify app.js -o bundle.js",
-    "test": "browserify tests/*.js | testling"
+    "test": "zuul -- tests/index.js",
   },
   "keywords": [
     "Backbone",
@@ -16,13 +16,11 @@
   ],
   "author": "Benjamin P. Verble",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "tape": "^3.0.3",
     "backbone": "^1.1.2",
     "jquery": "^2.1.1",
     "lodash": "^2.4.1",
-    "tape": "^3.0.3"
-  },
-  "devDependencies": {
-    "tape": "^3.0.3"
+     "zuul": "1.0.1"
   }
 }
