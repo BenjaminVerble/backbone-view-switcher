@@ -1,3 +1,6 @@
+var $ = require('jquery');
+var assert = require('assert');
+
 var runSetup = require('../test-setup/add-view-w-coll');
 
 suite('Backbone View Switcher', function(){

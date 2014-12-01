@@ -4,7 +4,7 @@
   "description": "A Backbone View Switcher",
   "main": "index.js",
   "scripts": {
-    "bfy": "browserify app.js -o bundle.js",
+    "examples": "browserify app.js -o bundle.js",
     "test": "zuul -- test/index.js"
   },
   "keywords": [

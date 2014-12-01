@@ -1,7 +1,7 @@
-var warnMsgs = require('./warn');
-var errorMsgs = require('./error');
-var appendViewWithCollection = require('./append-with-collection');
-var appendViewWithoutCollection = require('./append-without-collection');
+var warnMsgs = require('./lib/warn');
+var errorMsgs = require('./lib/error');
+var appendViewWithCollection = require('./lib/append-with-collection');
+var appendViewWithoutCollection = require('./lib/append-without-collection');
 
 module.exports = function (el, V, C){
 
