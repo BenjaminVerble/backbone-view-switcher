@@ -1,9 +1,9 @@
 name: backbone-view-switcher
-ui: tape
+ui: mocha-tdd
 browsers:
   - name: chrome
     version: 27..latest
   - name: ie
     version: latest
   - name: iphone
-    version: 6.1
+    version: 6.1 
