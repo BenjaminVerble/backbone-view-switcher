@@ -1,11 +1,7 @@
 backbone-view-switcher
 ======================
 
-WORK IN PROGRESS
-
-[![Build Status](https://travis-ci.org/BenjaminVerble/backbone-view-switcher.svg?branch=master)](https://travis-ci.org/BenjaminVerble/backbone-view-switcher)
-
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/benjaminverble.svg)](https://saucelabs.com/u/benjaminverble)
+!! NO MAINTENANCE INTENDED !!
 
 Backbone View Switcher places Backbone.js views into a container that has an #id. It can also attach a collection to a view when the view is instantiated by Backbone View Switcher. This module currently requires Browserify.
 
